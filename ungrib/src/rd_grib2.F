@@ -770,6 +770,7 @@ C  SET ARGUMENTS
 	         ! Height above ground (m)
 		 if (gfld%ipdtmpl(12) .eq. 2. .or. 
      &               gfld%ipdtmpl(12) .eq. 1000. .or.     ! temp fix for hrrr maxref
+     &               gfld%ipdtmpl(12) .eq. 1. .or.     ! u10, v10 fix for gdas - kranke
      &               gfld%ipdtmpl(12) .eq. 10. ) then
                    level=200100.
 		 else
