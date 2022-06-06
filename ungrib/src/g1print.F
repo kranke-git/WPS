@@ -35,8 +35,8 @@ program g1print
   character(len=7) :: field
   integer :: ec_rec_len
 
-  ec_rec_len = 0
-! ec_rec_len = 26214508
+!  ec_rec_len = 0
+  ec_rec_len = 26214508
   flnm = ' '
   call parse_args(ierr, a1='v', l1=ivb, a2='V', l2=idb, hlast=flnm)
   if (ierr.ne.0) then
